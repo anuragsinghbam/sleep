@@ -1,5 +1,14 @@
 {
+  "name": "sleep-api",
+  "version": "1.0.0",
+  "description": "This is an api which will respond after a given time",
+  "main": "index.js",
   "dependencies": {
     "express": "^4.19.2"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anurag Singh",
+  "license": "ISC"
 }

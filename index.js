@@ -1,4 +1,4 @@
-const express = require('express')
+import express from 'express'
 const app = express()
 
 // Endpoint to delay response
@@ -15,6 +15,8 @@ app.get('/', (req, res) => {
       .status(400)
       .json({ error: 'Invalid sleep time. Please provide a valid number' })
   }
+  
+  res.setHeader('Cache-Control', 'no-store');
 
   setTimeout(() => {
     res.json({
